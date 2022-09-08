@@ -1,0 +1,75 @@
+@import './color.less';
+@import './vant-theme.less';
+
+@widthList: 100, 150, 220, 250, 300;
+
+each(@widthList, {
+  .w-@{value} {
+    width: @value * 1px;
+  }
+  .h-@{value} {
+    height: @value * 1px;
+  }
+});
+
+@marginList: 5, 10, 15, 20, 25;
+
+each(@marginList, {
+  .m-l-@{value} {
+    margin-left: @value * 1px;
+  }
+  .m-r-@{value} {
+    margin-right: @value * 1px;
+  }
+  .m-t-@{value} {
+    margin-top: @value * 1px;
+  }
+  .m-b-@{value} {
+    margin-bottom: @value * 1px;
+  }
+  .m-x-@{value} {
+    margin: 0 @value * 1px;
+  }
+  .m-y-@{value} {
+    margin: @value * 1px 0;
+  }
+
+  .p-l-@{value} {
+    padding-left: @value * 1px;
+  }
+  .p-r-@{value} {
+    padding-right: @value * 1px;
+  }
+  .p-t-@{value} {
+    padding-top: @value * 1px;
+  }
+  .p-b-@{value} {
+    padding-bottom: @value * 1px;
+  }
+  .p-x-@{value} {
+    padding: 0 @value * 1px;
+  }
+  .p-y-@{value} {
+    padding: @value * 1px 0;
+  }
+});
+
+.flex {
+  display: flex;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.flex-grow-1 {
+  flex-grow: 1;
+}
+
+.f-b-50p {
+  flex-basis: 50%;
+}
+
+body {
+  font-family: 'Microsoft Yahei', PingFangSC-Regular, sans-serif;;
+}
