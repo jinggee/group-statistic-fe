@@ -1,7 +1,38 @@
 # group-statistic-fe
-通过vue-cli5 创建的项目
+通视界前端项目
 
-环境： node：v16.13.2， npm: v8.1.2
+
+需要安装的vscode插件：ESLint、Prettier、Stylelint
+推荐安装的插件：Volar
+
+setting.json配置
+```
+"editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true,
+      "source.fixAll.stylelint": true,
+    },
+    "editor.tabSize": 2,
+    "eslint.validate": [
+        "javascript",
+        "javascriptreact",
+        "typescript",
+        "vue"
+    ],
+    "stylelint.validate": [
+        "css",
+        "sass",
+        "less",
+        "vue"
+    ],
+    "[vue]": {
+        "editor.formatOnSave": true,
+        // "editor.defaultFormatter": "esbenp.prettier-vscode",
+        // "editor.defaultFormatter": "stylelint.vscode-stylelint"
+         "editor.defaultFormatter": "esbenp.prettier-vscode"
+        // "editor.defaultFormatter": "octref.vetur"
+    },
+```
+
 ## Project setup
 ```
 npm install
@@ -19,7 +50,7 @@ npm run build
 
 ### Lints and fixes files
 ```
-npm run lint
+npm run lint:prettier
 ```
 
 ### Customize configuration

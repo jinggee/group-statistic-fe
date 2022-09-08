@@ -5,21 +5,21 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
-import { List } from 'vant'
+    import { defineComponent } from 'vue'
+    import { List } from 'vant'
 
-export default defineComponent({
-  name: 'infinity-scroll',
-  props: {
-    sortFields: {
-      type: Array,
-    },
-  },
-  components: {
-    [List.name]: List,
-  },
-  setup() {
-    return {}
-  },
-})
+    export default defineComponent({
+        name: 'infinity-scroll',
+        props: {
+            sortFields: {
+                type: Array,
+            },
+        },
+        components: {
+            [List.name]: List,
+        },
+        setup() {
+            return {}
+        },
+    })
 </script>
